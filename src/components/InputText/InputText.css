@@ -1,0 +1,122 @@
+.input-container {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	max-width: 323px;
+	width: 100%;
+}
+
+.input {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	font-size: 0.75rem;
+	font-weight: 400;
+	padding: 0.65em 1em;
+	border: 1px solid #d1d1d6;
+	border-radius: 4px;
+	outline: none;
+	background-color: #fff;
+	transition: all 0.25s ease;
+}
+
+.input-no-border {
+	border: 1px solid transparent;
+}
+
+.input-transparent {
+	background-color: transparent;
+}
+
+.input:hover {
+	outline: none;
+	border: 1px solid #b3b3b3;
+}
+
+.input-text {
+	background-color: transparent;
+	flex: 1;
+	border: none;
+	outline: none;
+}
+
+.input-text::placeholder {
+	color: #70707b;
+}
+
+.input:has(.input-text:focus) {
+	border: 1px solid #84caff;
+	box-shadow: 0px 0px 0px 4px rgba(46, 144, 250, 0.24);
+}
+
+.input:has(.input-text:invalid) {
+	border: 1px solid #fda29b;
+}
+
+.input:has(.input-text:invalid:focus) {
+	border: 1px solid #fda29b;
+	box-shadow: 0px 0px 0px 4px rgba(240, 68, 56, 0.24);
+}
+
+.input:has(.input-text:required:focus) {
+	border: 1px solid #fda29b;
+	box-shadow: 0px 0px 0px 4px rgba(240, 68, 56, 0.24);
+}
+
+.input:has(.input-text:disabled) {
+	cursor: not-allowed;
+}
+
+.input-text:disabled {
+	background-color: transparent;
+	color: #d1d1d6;
+	cursor: not-allowed;
+}
+
+.input-text:disabled::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: #d1d1d6;
+}
+.input-text:disabled:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #d1d1d6;
+}
+.input-text:disabled::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #d1d1d6;
+}
+.input-text:disabled:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	color: #d1d1d6;
+}
+
+.badge-text {
+	padding: 0 6px;
+	background-color: #fafafa;
+	color: #3f3f46;
+	border: 1px solid #e4e4e7;
+	border-radius: 4px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.input-label-icon {
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 8px;
+}
+
+.input-label-icon:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+.input-error {
+	max-width: 323px;
+	color: #d92d20;
+	word-break: break-word;
+}

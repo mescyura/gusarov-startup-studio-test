@@ -1,0 +1,27 @@
+.label {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 0.75rem;
+	font-weight: 500;
+	color: #1a1a1e;
+	max-width: 323px;
+	/* text-wrap: wrap; */
+}
+
+.label-text {
+	word-break: break-word;
+}
+
+.label-icon {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.label-icon:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
